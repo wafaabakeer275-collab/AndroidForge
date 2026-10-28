@@ -533,4 +533,5 @@ jobs:
         if: steps.build.outputs.build_succeeded != 'true'
         run: |
           echo "::error::Android build failed. See the diagnosis above and the AndroidForge-logs artifact."
-          exit 1
+          exit
+          # run-build
