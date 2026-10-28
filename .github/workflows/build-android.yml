@@ -201,7 +201,7 @@ jobs:
           JDK_VER="${{ steps.toolchain.outputs.jdk_version }}"
           case "$JDK_VER" in
             8)  NEW_JH=/usr/lib/jvm/java-17-openjdk-amd64 ;;
-            11) NEW_JH=/usr/lib/jvm/java-11-openjdk-amd64 ;;
+            11) NEW_JH=/usr/lib/jvm/java-17-openjdk-amd64 ;;
             17) NEW_JH=/usr/lib/jvm/java-17-openjdk-amd64 ;;
             21) NEW_JH=/usr/lib/jvm/java-17-openjdk-amd64 ;;  # fallback (no JDK 21 in image yet)
             *)  echo "Unknown JDK version: $JDK_VER — defaulting to JDK 17"
